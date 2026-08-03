@@ -3,54 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S3FAI</title>
+<title>S3FAI - AI Fashion</title>
+
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#111;
-color:white;
-text-align:center;
 }
-header{
-padding:60px 20px;
+
+body{
+background:#111;
+color:#fff;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
 background:#000;
 }
-h1{
-font-size:48px;
-margin:0;
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#8b5cf6;
 }
-p{
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#000,#2a174e);
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
 font-size:20px;
 color:#ccc;
+max-width:700px;
 }
+
 button{
+margin-top:30px;
 padding:15px 35px;
-font-size:18px;
-background:#00c853;
-color:white;
+background:#8b5cf6;
 border:none;
-border-radius:8px;
+border-radius:10px;
+color:white;
+font-size:18px;
 cursor:pointer;
-margin-top:20px;
 }
+
 section{
-padding:60px 20px;
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+footer{
+padding:30px;
+background:#000;
+text-align:center;
+color:#888;
 }
 </style>
 </head>
+
 <body>
 
-<header>
-<h1>S3FAI</h1>
-<p>Your AI Fashion & Affiliate Store</p>
-<button>Explore Now</button>
-</header>
+<nav>
+<div class="logo">S3FAI</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Men</a></li>
+<li><a href="#">Women</a></li>
+<li><a href="#">Shoes</a></li>
+<li><a href="#">AI Stylist</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Find Your Perfect Outfit With AI</h1>
+
+<p>
+Upload your photo, choose your budget and let AI suggest your complete fashion look.
+</p>
+
+<button>Start Styling</button>
+
+</div>
 
 <section>
-<h2>Coming Soon 🚀</h2>
-<p>Find AI-powered outfit recommendations, fashion deals, and affiliate products.</p>
+
+<h2>Trending Categories</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Men Fashion</h3>
+<p>Premium Collection</p>
+</div>
+
+<div class="card">
+<h3>Women Fashion</h3>
+<p>Latest Styles</p>
+</div>
+
+<div class="card">
+<h3>Shoes</h3>
+<p>Top Brands</p>
+</div>
+
+<div class="card">
+<h3>Accessories</h3>
+<p>Watch, Perfume & More</p>
+</div>
+
+</div>
+
 </section>
+
+<footer>
+© 2026 S3FAI • AI Fashion Platform
+</footer>
 
 </body>
 </html>
