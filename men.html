@@ -21,42 +21,136 @@ color:#fff;
 header{
 background:#000;
 padding:20px;
-text-align:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header h1{
+.logo{
+font-size:28px;
+font-weight:bold;
 color:#4da6ff;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#4da6ff;
+}
+
+h1{
+text-align:center;
+margin:40px 0;
+font-size:40px;
 }
 
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-padding:40px;
+padding:0 40px 40px;
 }
-
 .card{
-background:#1d1d1d;
+background:#1b1b1b;
 border-radius:12px;
 overflow:hidden;
-text-align:center;
 transition:.3s;
+text-align:center;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 
 .card img{
 width:100%;
-height:300px;
+height:320px;
 object-fit:cover;
 }
 
 .card h3{
 margin:15px 0 8px;
+font-size:22px;
 }
 
-.card p{
+.price{
+font-size:22px;
 color:#00ff99;
-font-size:20
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.buy{
+display:inline-block;
+margin-bottom:20px;
+padding:12px 30px;
+background:#4da6ff;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.buy:hover{
+background:#2d8cff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">S3FAI</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="men.html">Men</a>
+<a href="women.html">Women</a>
+<a href="shoes.html">Shoes</a>
+</nav>
+
+</header>
+
+<h1>Men Collection</h1>
+
+<div class="products">  
+  <div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="T-Shirt">
+<h3>Premium Black T-Shirt</h3>
+<p class="price">₹999</p>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Shoes">
+<h3>Running Shoes</h3>
+<p class="price">₹2,499</p>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600" alt="Watch">
+<h3>Classic Watch</h3>
+<p class="price">₹1,799</p>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600" alt="Jacket">
+<h3>Denim Jacket</h3>
+<p class="price">₹2,999</p>
+<a href="#" class="buy">Buy Now</a>
+</div>
+</div>
+
+<footer style="background:#000;padding:25px;text-align:center;margin-top:40px;">
+  <p>© 2026 S3FAI • AI Fashion Platform</p>
+</footer>
+
+</body>
+</html>
