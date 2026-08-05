@@ -6,6 +6,7 @@
 <title>S3FAI - AI Fashion</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,230 +15,193 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
-color:#fff;
+background:#0f0f0f;
+color:white;
 }
 
-nav{
+header{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-background:#000;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .logo{
 font-size:32px;
 font-weight:bold;
-color:#8b5cf6;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
+color:#4da3ff;
 }
 
 nav a{
 color:white;
 text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#4da3ff;
 }
 
 .hero{
 height:90vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-background:linear-gradient(135deg,#000,#2a174e);
+background:linear-gradient(135deg,#111,#1d2b64);
 }
 
 .hero h1{
-font-size:55px;
+font-size:60px;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-color:#ccc;
-max-width:700px;
+font-size:22px;
+margin-bottom:30px;
+color:#ddd;
 }
 
-button{
-margin-top:30px;
+.btn{
+display:inline-block;
 padding:15px 35px;
-background:#8b5cf6;
-border:none;
-border-radius:10px;
+background:#4da3ff;
 color:white;
+text-decoration:none;
+border-radius:10px;
 font-size:18px;
-cursor:pointer;
+font-weight:bold;
 }
 
-section{
+.btn:hover{
+background:#2b82dd;
+}
+
+.section{
 padding:80px 8%;
 }
 
 h2{
 text-align:center;
+font-size:40px;
 margin-bottom:40px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1d1d1d;
-padding:25px;
-border-radius:15px;
-text-align:center;
-}
-
-footer{
-padding:30px;
-background:#000;
-text-align:center;
-color:#888;
-}
 </style>
 </head>
 
 <body>
 
-<nav>
+<header>
 <div class="logo">S3FAI</div>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Men</a></li>
-<li><a href="#">Women</a></li>
-<li><a href="#">Shoes</a></li>
-<li><a href="#">AI Stylist</a></li>
-</ul>
+<nav>
+<a href="#">Home</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">AI Stylist</a>
 </nav>
 
-<div class="hero">
+</header>
+
+<section class="hero">
+
+<div>
+
 <h1>Find Your Perfect Outfit With AI</h1>
 
-<p>
-Upload your photo, choose your budget and let AI suggest your complete fashion look.
+<p>Upload your photo and discover the best fashion style.</p>
+
+<a href="#stylist" class="btn">Start Styling</a>
+
+</div>
+
+</section>
+<section id="stylist" class="section">
+
+<h2>AI Stylist</h2>
+
+<div style="max-width:500px;margin:auto;text-align:center;">
+
+<input type="file" style="margin:10px;width:100%;padding:12px;">
+
+<select style="margin:10px;width:100%;padding:12px;">
+<option>Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<select style="margin:10px;width:100%;padding:12px;">
+<option>Select Occasion</option>
+<option>Date</option>
+<option>Wedding</option>
+<option>Party</option>
+<option>Office</option>
+<option>Casual</option>
+</select>
+
+<select style="margin:10px;width:100%;padding:12px;">
+<option>Select Budget</option>
+<option>₹1000</option>
+<option>₹3000</option>
+<option>₹5000</option>
+<option>₹10000+</option>
+</select>
+
+<br><br>
+
+<a href="#products" class="btn">Find My Outfit</a>
+
+</div>
+
+</section>
+
+<section id="products" class="section">
+
+<h2>Featured Products</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
+  <div style="background:#1a1a1a;padding:20px;border-radius:15px;text-align:center;">
+  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500" style="width:100%;border-radius:10px;">
+  <h3>Premium Black T-Shirt</h3>
+  <p>₹999</p>
+  <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div style="background:#1a1a1a;padding:20px;border-radius:15px;text-align:center;">
+  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" style="width:100%;border-radius:10px;">
+  <h3>Running Shoes</h3>
+  <p>₹2,499</p>
+  <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div style="background:#1a1a1a;padding:20px;border-radius:15px;text-align:center;">
+  <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500" style="width:100%;border-radius:10px;">
+  <h3>Classic Watch</h3>
+  <p>₹1,799</p>
+  <a href="#" class="btn">Buy Now</a>
+</div>
+
+</div>
+</section>
+<footer style="background:#111;padding:40px;text-align:center;margin-top:60px;">
+
+<h3>S3FAI</h3>
+
+<p>Your AI Fashion Partner</p>
+
+<p style="margin-top:15px;">
+© 2026 S3FAI. All Rights Reserved.
 </p>
 
-<button>Start Styling</button>
-
-</div>
-
-<section>
-
-<h2>Trending Categories</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Men Fashion</h3>
-<p>Premium Collection</p>
-</div>
-
-<div class="card">
-<h3>Women Fashion</h3>
-<p>Latest Styles</p>
-</div>
-
-<div class="card">
-<h3>Shoes</h3>
-<p>Top Brands</p>
-</div>
-
-<div class="card">
-<h3>Accessories</h3>
-<p>Watch, Perfume & More</p>
-</div>
-
-</div>
-
-</section>
-</section>
-
-<!-- YAHAN Featured Products wala code paste karo -->
-
-<section class="section">
-  <h2>Featured Products</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="T-Shirt">
-      <h3>Premium Black T-Shirt</h3>
-      <p>₹999</p>
-      <a class="buy" href="#">Buy Now</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Shoes">
-      <h3>Running Shoes</h3>
-      <p>₹2,499</p>
-      <a class="buy" href="#">Buy Now</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400" alt="Watch">
-      <h3>Classic Watch</h3>
-      <p>₹1,799</p>
-      <a class="buy" href="#">Buy Now</a>
-    </div>
-
-  </div>
-</section>
-<section class="ai-stylist">
-  <h2>AI Stylist</h2>
-
-  <input type="file" accept="image/*"><br><br>
-
-  <select>
-    <option>Select Gender</option>
-    <option>Male</option>
-    <option>Female</option>
-  </select>
-
-  <br><br>
-
-  <select>
-    <option>Select Occasion</option>
-    <option>Date</option>
-    <option>Office</option>
-    <option>Wedding</option>
-    <option>Party</option>
-    <option>Casual</option>
-  </select>
-
-  <br><br>
-
-  <select>
-    <option>Select Budget</option>
-    <option>₹1000</option>
-    <option>₹2000</option>
-    <option>₹5000</option>
-    <option>₹10000+</option>
-  </select>
-
-  <br><br>
-
-  <button>✨ Find My Outfit</button>
-</section>
-<footer>
-© 2026 S3FAI • AI Fashion Platform
 </footer>
-<footer>
-© 2026 S3FAI • AI Fashion Platform
-</footer>
-
-</body>
-</html>
 
 </body>
 </html>
