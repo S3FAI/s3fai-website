@@ -3,15 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S3FAI - AI Fashion</title>
+<title>S3FAI</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#111;color:#fff;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#000;position:sticky;top:0;}
+.logo{font-size:28px;font-weight:bold;color:#00bfff;}
+nav a{color:#fff;text-decoration:none;margin:0 15px;}
+nav a:hover{color:#00bfff;}
+section{padding:80px 20px;text-align:center;min-height:100vh;}
+.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.hero h1{font-size:42px;margin-bottom:20px;}
+.hero p{max-width:600px;margin-bottom:20px;}
+.btn{display:inline-block;padding:12px 25px;background:#00bfff;color:#fff;text-decoration:none;border-radius:8px;}
+.card{background:#222;padding:20px;border-radius:10px;margin:20px auto;max-width:350px;}
+</style>
+
 </head>
-
 <body>
 
 <header>
-
 <div class="logo">S3FAI</div>
 
 <nav>
@@ -21,83 +33,33 @@
 <a href="#shoes">Shoes</a>
 <a href="#stylist">AI Stylist</a>
 </nav>
-
-
-
 </header>
 
-<section id="home">
-
-<div class="hero">
-
-<div class="hero-text">
+<section id="home" class="hero">
 <h1>Find Your Perfect Outfit With AI</h1>
-
-<p>
-Upload your photo and get outfit recommendations based on your style,
-budget and occasion.
-</p>
-
+<p>Premium Fashion for Every Occasion.</p>
 <a href="#stylist" class="btn">Start Styling</a>
-</div>
+</section>
 
-<div class="hero-image">
-<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700" alt="Fashion">
-</div>
+<section id="men">
+<h2>Men Collection</h2>
+<div class="card">Premium Men's Fashion</div>
+</section>
 
-</div>
+<section id="women">
+<h2>Women Collection</h2>
+<div class="card">Premium Women's Fashion</div>
+</section>
 
+<section id="shoes">
+<h2>Shoes Collection</h2>
+<div class="card">Trending Shoes</div>
 </section>
 
 <section id="stylist">
-
 <h2>AI Stylist</h2>
-
-<form>
-
-<input type="file">
-
-<select>
-<option>Select Gender</option>
-<option>Male</option>
-<option>Female</option>
-</select>
-
-<select>
-<option>Select Occasion</option>
-<option>Date</option>
-<option>Office</option>
-<option>Wedding</option>
-<option>Party</option>
-</select>
-
-<select>
-<option>Select Budget</option>
-<option>₹1000</option>
-<option>₹3000</option>
-<option>₹5000+</option>
-</select>
-
-<button>Find My Outfit</button>
-
-</form>
-
+<p>Coming Soon...</p>
 </section>
 
-<section class="products">
-
-<h2>Featured Products</h2>
-
-<div class="cards">
-
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 S3FAI - AI Fashion Platform</p>
-</footer>
-
-<script src="script.js"></script>    
 </body>
 </html>
