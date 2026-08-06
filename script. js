@@ -1,0 +1,16 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+const button = document.querySelector("button");
+
+if(button){
+
+button.addEventListener("click", (e) => {
+e.preventDefault();
+
+alert("AI Stylist feature is coming soon! 🚀");
+
+});
+
+}
+
+});
