@@ -17,7 +17,51 @@ section{padding:80px 20px;text-align:center;min-height:100vh;}
 .hero h1{font-size:42px;margin-bottom:20px;}
 .hero p{max-width:600px;margin-bottom:20px;}
 .btn{display:inline-block;padding:12px 25px;background:#00bfff;color:#fff;text-decoration:none;border-radius:8px;}
-.card{background:#222;padding:20px;border-radius:10px;margin:20px auto;max-width:350px;}
+.card{background:#222;padding:20px;border-radius:10px;margin:20px auto;max-width:350px;}.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.product{
+background:#222;
+padding:20px;
+border-radius:12px;
+text-align:center;
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-8px);
+}
+
+.product img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product h3{
+margin:15px 0 10px;
+}
+
+.product p{
+font-size:20px;
+color:#00bfff;
+font-weight:bold;
+}
+
+.product button{
+background:#00bfff;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
 </style>
 
 </head>
