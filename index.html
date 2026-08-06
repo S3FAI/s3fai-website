@@ -5,201 +5,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>S3FAI - AI Fashion</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0f0f0f;
-color:white;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#111;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.logo{
-font-size:32px;
-font-weight:bold;
-color:#4da3ff;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#4da3ff;
-}
-
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#111,#1d2b64);
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-color:#ddd;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#4da3ff;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-size:18px;
-font-weight:bold;
-}
-
-.btn:hover{
-background:#2b82dd;
-}
-
-.section{
-padding:80px 8%;
-}
-
-h2{
-text-align:center;
-font-size:40px;
-margin-bottom:40px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<div class="logo">S3FAI</div>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="men.html">Men</a>
-  <a href="women.html">Women</a>
-  <a href="shoes.html">Shoes</a>
-  <a href="#stylist">AI Stylist</a>
-</nav>
-                    
-                    
+    <div class="logo">S3FAI</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="#stylist">AI Stylist</a>
+    </nav>
+</header>
 
 <section class="hero">
 
-<div>
-
+<div class="hero-text">
 <h1>Find Your Perfect Outfit With AI</h1>
 
-<p>Upload your photo and discover the best fashion style.</p>
+<p>
+Upload your photo and get outfit recommendations based on your style,
+budget and occasion.
+</p>
 
 <a href="#stylist" class="btn">Start Styling</a>
+</div>
 
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700" alt="">
 </div>
 
 </section>
-<section id="stylist" class="section">
+
+<section id="stylist">
 
 <h2>AI Stylist</h2>
 
-<div style="max-width:500px;margin:auto;text-align:center;">
+<form>
 
-<input type="file" style="margin:10px;width:100%;padding:12px;">
+<input type="file">
 
-<select style="margin:10px;width:100%;padding:12px;">
+<select>
 <option>Select Gender</option>
 <option>Male</option>
 <option>Female</option>
 </select>
 
-<select style="margin:10px;width:100%;padding:12px;">
+<select>
 <option>Select Occasion</option>
 <option>Date</option>
+<option>Office</option>
 <option>Wedding</option>
 <option>Party</option>
-<option>Office</option>
-<option>Casual</option>
 </select>
 
-<select style="margin:10px;width:100%;padding:12px;">
+<select>
 <option>Select Budget</option>
 <option>₹1000</option>
 <option>₹3000</option>
-<option>₹5000</option>
-<option>₹10000+</option>
+<option>₹5000+</option>
 </select>
 
-<br><br>
+<button>Find My Outfit</button>
 
-<a href="#products" class="btn">Find My Outfit</a>
-
-</div>
+</form>
 
 </section>
 
-<section id="products" class="section">
+<section class="products">
 
 <h2>Featured Products</h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
-  <div style="background:#1a1a1a;padding:20px;border-radius:15px;text-align:center;">
-  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500" style="width:100%;border-radius:10px;">
-  <h3>Premium Black T-Shirt</h3>
-  <p>₹999</p>
-  <a href="#" class="btn">Buy Now</a>
-</div>
-
-<div style="background:#1a1a1a;padding:20px;border-radius:15px;text-align:center;">
-  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" style="width:100%;border-radius:10px;">
-  <h3>Running Shoes</h3>
-  <p>₹2,499</p>
-  <a href="#" class="btn">Buy Now</a>
-</div>
-
-<div style="background:#1a1a1a;padding:20px;border-radius:15px;text-align:center;">
-  <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500" style="width:100%;border-radius:10px;">
-  <h3>Classic Watch</h3>
-  <p>₹1,799</p>
-  <a href="#" class="btn">Buy Now</a>
-</div>
+<div class="cards">
 
 </div>
+
 </section>
-<footer style="background:#111;padding:40px;text-align:center;margin-top:60px;">
 
-<h3>S3FAI</h3>
+<footer>
 
-<p>Your AI Fashion Partner</p>
-
-<p style="margin-top:15px;">
-© 2026 S3FAI. All Rights Reserved.
-</p>
+<p>© 2026 S3FAI - AI Fashion Platform</p>
 
 </footer>
 
